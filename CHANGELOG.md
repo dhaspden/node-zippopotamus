@@ -1,6 +1,10 @@
 # Changelog
 ---
 
+### 0.0.5
+- Add dependencies for testing
+- Add Babel ES2015 preset to Gulp and .babelrc
+
 ### 0.0.4
 - Add LICENSE.md
 - Add README.md

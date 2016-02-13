@@ -14,7 +14,7 @@ gulp.task('build', () => {
       '!gulpfile.js'
     ])
     .pipe(babel({
-      presets: ['stage-0']
+      presets: ['stage-0', 'es2015']
     }))
     .pipe(gulp.dest('dist'));
 });
