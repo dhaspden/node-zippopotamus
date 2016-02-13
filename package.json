@@ -1,0 +1,48 @@
+{
+  "name": "zippopotamus",
+  "version": "0.0.1",
+  "description": "Query for zip code information using the Zippopotamus API.",
+  "license": "MIT",
+  "repository": "https://github.com/dhaspden/node-zippopotamus",
+  "author": {
+    "name": "Dylan Aspden",
+    "email": "dhaspden@gmail.com",
+    "url": "dhaspden.com"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "prepublish": "npm run build",
+    "prebuild": "npm run coverage",
+    "build": "gulp build",
+    "test": "find ./lib -name '*.spec.js' | xargs mocha --require babel-core/register",
+    "coverage": "find ./lib -name '*.spec.js' | xargs babel-istanbul cover _mocha -- --require babel-core"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "index.js",
+    "dist",
+    "lib"
+  ],
+  "keywords": [
+    "zippopotamus",
+    "node",
+    "api",
+    "wrapper",
+    "zip",
+    "code"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "6.4.5",
+    "babel-preset-stage-0": "6.5.0",
+    "chai": "3.5.0",
+    "gulp": "3.9.0",
+    "gulp-babel": "6.1.1",
+    "gulp-util": "3.0.7",
+    "sinon": "1.17.3",
+    "sinon-chai": "2.8.0",
+    "supertest": "1.1.0"
+  }
+}
