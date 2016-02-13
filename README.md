@@ -41,11 +41,22 @@ zippopotamus
   .then(information => {
     // ...
   });
+
+// Query for a zip code, given the country, zip code and a callback
+zippopotamus.query({
+  country: 'CA',
+  code: 'L6A'
+}, (error, response) => {
+  if (error) // ...
+  else {
+    // ...
+  }
+});
 ```
 
 ## API
 
-### zippopotamus.query(options) -> Promise.<information|Error>
+### zippopotamus.query(options[, callback]) -> Promise.<information|Error>
 
 Queries the Zippopotamus server for information given the options.  Queries using either the country and zip code, or using the country, state and city.  Returns the raw results from the API to the caller as a **promise**.
 
@@ -55,6 +66,8 @@ Queries the Zippopotamus server for information given the options.  Queries usin
   - **[options.code]** - Zip code to query for from the server, should match the codes of the country
   - **[options.state]** - State to query for from the server, not just restricted to the *US*
   - **[options.city]** - City to query for from the server, not just restricted to the *US*
+
+- **[callback]** - Optional callback which is called with the same data as the promise, with the error (if any) as the first argument and the information as the second argument
 
 **Note:** You cannot use the zip code with the state and city.  You either use the zip code or the state and city combination.
 

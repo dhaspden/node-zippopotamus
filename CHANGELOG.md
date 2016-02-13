@@ -1,6 +1,10 @@
 # Changelog
 ---
 
+### 0.1.2
+- Add optional callback function argument for those who don't want to use promises
+- Add appropriate test cases for the callback function
+
 ### 0.1.1
 - Fix test cases using the mock API, as it wasn't actually intercepting the requests
 

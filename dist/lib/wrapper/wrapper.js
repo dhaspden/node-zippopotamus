@@ -17,7 +17,7 @@ var _asyncToGenerator2 = require('babel-runtime/helpers/asyncToGenerator');
 var _asyncToGenerator3 = _interopRequireDefault(_asyncToGenerator2);
 
 var query = function () {
-  var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee(options) {
+  var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee(options, callback) {
     return _regenerator2.default.wrap(function _callee$(_context) {
       while (1) {
         switch (_context.prev = _context.next) {
@@ -35,13 +35,17 @@ var query = function () {
                   });
                   response.on('end', function () {
                     var parsed = JSON.parse(body);
+
                     resolve(parsed);
+                    if (callback) callback(null, parsed);
                   });
                 });
 
                 request.on('error', function (error) {
-                  return reject(error);
+                  reject(error);
+                  if (callback) callback(error);
                 });
+
                 request.end();
               }
             }));
@@ -53,7 +57,7 @@ var query = function () {
       }
     }, _callee, this);
   }));
-  return function query(_x) {
+  return function query(_x, _x2) {
     return ref.apply(this, arguments);
   };
 }();
