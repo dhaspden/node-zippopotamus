@@ -1,6 +1,6 @@
 {
   "name": "zippopotamus",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Query for zip code information using the Zippopotamus API.",
   "license": "MIT",
   "repository": "https://github.com/dhaspden/node-zippopotamus",
