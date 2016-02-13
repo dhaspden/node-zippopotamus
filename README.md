@@ -1,7 +1,7 @@
 # Node Zippopotamus
 ---
 
-*Node Zippopotamus* is an API wrapper for the **Zippopotamus** zip (and postal code) service.  This wrapper makes the process of submitting requests to the API as easy and having the country code and zip code to query for.  The results are returned according to the return formatting of the API itself.
+*Node Zippopotamus* is an API wrapper for the **Zippopotamus** zip (and postal code) service.  The **Zippopotamus** service can be found [here](http://zippopotam.us).  This wrapper makes the process of submitting requests to the API as easy and having the country code and zip code to query for.  The results are returned according to the return formatting of the API itself.
 
 *Node Zippopotamus* provides the following functionality:
 

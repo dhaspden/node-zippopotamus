@@ -1,6 +1,10 @@
 # Changelog
 ---
 
+### 0.1.3
+- Add credit to **Zippopotamus**
+- Add license information for **Zippopotamus**
+
 ### 0.1.2
 - Add optional callback function argument for those who don't want to use promises
 - Add appropriate test cases for the callback function
