@@ -14,6 +14,7 @@ gulp.task('build', () => {
       '!gulpfile.js'
     ])
     .pipe(babel({
+      plugins: ['transform-runtime'],
       presets: ['stage-0', 'es2015']
     }))
     .pipe(gulp.dest('dist'));

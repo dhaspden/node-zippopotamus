@@ -1,6 +1,16 @@
 # Changelog
 ---
 
+### 0.1.0
+- Add *query* function to module
+
+  - Allows for country and zip code combination request
+  - Allows for country, state, and city request
+  - Allows for users to specify either http or https
+  - Allows for users to specify the URL of their own Zippopotamus server
+
+- Add test cases for both types of cases
+
 ### 0.0.5
 - Add dependencies for testing
 - Add Babel ES2015 preset to Gulp and .babelrc

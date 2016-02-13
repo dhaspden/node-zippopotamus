@@ -1,0 +1,118 @@
+{
+  "us_code_valid": {
+    "request": {
+      "country": "US",
+      "code": 90210
+    },
+    "response": {
+      "post code": "90210",
+      "country": "United States",
+      "country abbreviation": "US",
+      "places": [{
+        "place name": "Beverly Hills",
+        "longitude": "-118.4065",
+        "state": "California",
+        "state abbreviation": "CA",
+        "latitude": "34.0901"
+      }]
+    }
+  },
+  "us_city_valid": {
+    "request": {
+      "country": "US",
+      "state": "CA",
+      "city": "Beverly%20Hills"
+    },
+    "response": {
+      "country abbreviation": "US",
+      "places": [
+        {
+          "place name": "Beverly Hills",
+          "longitude": "-118.2987",
+          "post code": "90209",
+          "latitude": "33.7866"
+        },
+        {
+          "place name": "Beverly Hills",
+          "longitude": "-118.4065",
+          "post code": "90210",
+          "latitude": "34.0901"
+        },
+        {
+          "place name": "Beverly Hills",
+          "longitude": "-118.383",
+          "post code": "90211",
+          "latitude": "34.0652"
+        },
+        {
+          "place name": "Beverly Hills",
+          "longitude": "-118.3995",
+          "post code": "90212",
+          "latitude": "34.0619"
+        },
+        {
+          "place name": "Beverly Hills",
+          "longitude": "-118.2987",
+          "post code": "90213",
+          "latitude": "33.7866"
+        }
+      ],
+      "country": "United States",
+      "place name": "Beverly Hills",
+      "state": "California",
+      "state abbreviation": "CA"
+    }
+  },
+  "ca_code_valid": {
+    "request": {
+      "country": "CA",
+      "code": "L6A"
+    },
+    "response": {
+      "post code": "L6A",
+      "country": "Canada",
+      "country abbreviation": "CA",
+      "places": [
+        {
+          "place name": "Maple",
+          "longitude": "-79.514",
+          "state": "Ontario",
+          "state abbreviation": "ON",
+          "latitude": "43.857"
+        }
+      ]
+    }
+  },
+  "ca_city_valid": {
+    "request": {
+      "country": "CA",
+      "state": "ON",
+      "city": "Maple"
+    },
+    "response": {
+      "country abbreviation": "CA",
+      "places": [
+        {
+          "place name": "Maple",
+          "longitude": "-79.514",
+          "post code": "L6A",
+          "latitude": "43.857"
+        },
+        {
+          "place name": "North York (North Park / Maple Leaf Park / Upwood Park)",
+          "longitude": "-79.4714",
+          "post code": "M6L",
+          "latitude": "43.7103"
+        }
+      ],
+      "country": "Canada",
+      "place name": "Maple",
+      "state": "Ontario",
+      "state abbreviation": "ON"
+    }
+  },
+  "invalid_options": {
+    "country": "US'",
+    "state": "CA"
+  }
+}
