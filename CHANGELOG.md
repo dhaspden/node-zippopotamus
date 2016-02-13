@@ -1,6 +1,9 @@
 # Changelog
 ---
 
+### 0.1.1
+- Fix test cases using the mock API, as it wasn't actually intercepting the requests
+
 ### 0.1.0
 - Add *query* function to module
 
