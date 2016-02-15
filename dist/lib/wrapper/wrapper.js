@@ -29,12 +29,18 @@ var query = function () {
                 }
 
                 options.country = options.country.toUpperCase();
+                if (typeof options.state === 'string') options.state = options.state.toUpperCase();
+
                 if (options.country.length !== 2 || !COUNTRIES[options.country]) {
                   throw new Error('Invalid country provided: ' + options.country);
                 }
 
                 if (options.code) {
                   if (typeof COUNTRIES[options.country] === 'number') {
+                    if (new String(options.code).length < COUNTRIES[options.country]) {
+                      throw new Error('Zip code provided is too short: ' + options.code);
+                    }
+
                     options.code = new String(options.code);
                     options.code = options.code.slice(0, COUNTRIES[options.country]);
                   }

@@ -71,7 +71,7 @@ Queries the Zippopotamus server for information given the options.  Queries usin
 
 **Note:** You cannot use the zip code with the state and city.  You either use the zip code or the state and city combination.
 
-**Note:** Longer postal codes (example *L6A0X9* in Canada) will be truncated to *L6A* for you.  You don't have to truncate yourself.
+**Note:** Longer postal codes (example *L6A0X9* in Canada) will be truncated to *L6A* for you.  You don't have to truncate yourself.  Shorter postal codes will trigger an error.
 
 ## Contributing
 

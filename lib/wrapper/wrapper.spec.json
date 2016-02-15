@@ -132,6 +132,12 @@
       ]
     }
   },
+  "ca_code_short": {
+    "request": {
+      "country": "CA",
+      "code": "L6"
+    }
+  },
   "lk_code_valid": {
     "request": {
       "country": "LK",

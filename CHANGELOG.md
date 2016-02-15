@@ -1,6 +1,9 @@
 # Changelog
 ---
 
+### 0.2.1
+- Add zip code validation if zip code is too short
+
 ### 0.2.0
 - Add automatic formatting for longer zip codes
 - Add country validation prior to sending the request
