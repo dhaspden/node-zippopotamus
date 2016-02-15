@@ -111,6 +111,47 @@
       "state abbreviation": "ON"
     }
   },
+  "ca_code_truncate": {
+    "request": {
+      "country": "CA",
+      "code": "L6A0X9"
+    },
+    "truncated": "L6A",
+    "response": {
+      "post code": "L6A",
+      "country": "Canada",
+      "country abbreviation": "CA",
+      "places": [
+        {
+          "place name": "Maple",
+          "longitude": "-79.514",
+          "state": "Ontario",
+          "state abbreviation": "ON",
+          "latitude": "43.857"
+        }
+      ]
+    }
+  },
+  "lk_code_valid": {
+    "request": {
+      "country": "LK",
+      "code": 96167
+    },
+    "response": {
+      "post code": "96167",
+      "country": "Sri Lanka",
+      "country abbreviation": "LK",
+      "places": [
+        {
+          "place name": "Idalgashinna",
+          "longitude": "80.9",
+          "state": "",
+          "state abbreviation": "BD",
+          "latitude": "6.7833"
+        }
+      ]
+    }
+  },
   "invalid_options": {
     "country": "US'",
     "state": "CA"

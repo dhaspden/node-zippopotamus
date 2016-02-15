@@ -71,6 +71,8 @@ Queries the Zippopotamus server for information given the options.  Queries usin
 
 **Note:** You cannot use the zip code with the state and city.  You either use the zip code or the state and city combination.
 
+**Note:** Longer postal codes (example *L6A0X9* in Canada) will be truncated to *L6A* for you.  You don't have to truncate yourself.
+
 ## Contributing
 
 This project was built using Babel Stage 0. I am open to anyone who wishes to fork the project and create new test cases, add useful functionality, or anything else. I use this project in my own work so I will be adding to this library as functionality arises that I need.

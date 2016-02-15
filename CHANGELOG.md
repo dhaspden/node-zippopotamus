@@ -1,6 +1,11 @@
 # Changelog
 ---
 
+### 0.2.0
+- Add automatic formatting for longer zip codes
+- Add country validation prior to sending the request
+- Add country data supported by the API
+
 ### 0.1.3
 - Add credit to **Zippopotamus**
 - Add license information for **Zippopotamus**
